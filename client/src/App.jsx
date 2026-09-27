@@ -6,7 +6,7 @@ import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
 import { Toaster } from "react-hot-toast";
 import { AuthContext } from "../context/AuthContext.jsx";
-import bgImage from "./assets/bgimage.svg"; // ✅ import added
+import bgimage from "./assets/bgimage.svg"; // ✅ import added
 
 const App = () => {
   const { authUser } = useContext(AuthContext);

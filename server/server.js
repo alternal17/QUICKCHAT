@@ -12,10 +12,16 @@ import Message from "./models/Message.js";
 const app = express();
 const httpServer = http.createServer(app);
 
+// ✅ Allowed origins (local + production frontend)
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://quickchatapp-rho.vercel.app"
+];
+
 // ✅ Configure Socket.io CORS
 export const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: allowedOrigins,
     credentials: true
   },
 });
@@ -41,7 +47,7 @@ io.on("connection", (socket) => {
 
 // ✅ Configure Express CORS
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: allowedOrigins,
   credentials: true
 }));
 

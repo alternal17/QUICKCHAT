@@ -13,8 +13,11 @@ const App = () => {
     <div
       className="min-h-screen bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: 'url("/bgimage.svg")', // ✅ lowercase to match file
-        backgroundAttachment: "fixed",
+        backgroundImage: 'url("/bgimage.svg")', // ✅ lowercase to match file name
+        backgroundSize: "cover",                 // ensures full-screen coverage
+        backgroundRepeat: "no-repeat",           // prevents tiling
+        backgroundPosition: "center",            // centers the image
+        backgroundAttachment: "fixed",           // keeps it static on scroll
       }}
     >
       <Toaster />

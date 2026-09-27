@@ -6,7 +6,7 @@ import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
 import { Toaster } from "react-hot-toast";
 import { AuthContext } from "../context/AuthContext.jsx";
-import bgimage from "./assets/bgimage.svg"; // ✅ import added
+import bgImage from "./assets/bgimage.svg"; // ✅ this import is essential
 
 const App = () => {
   const { authUser } = useContext(AuthContext);
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bgImage})` }}
-      className="bg-contain"
+      className="bg-contain bg-no-repeat bg-center min-h-screen"
     >
       <Toaster />
       <Routes>
@@ -36,6 +36,7 @@ const App = () => {
 };
 
 export default App;
+
 
 
 

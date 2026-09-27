@@ -35,8 +35,8 @@ const assets = {
     menu_icon,
     arrow_icon,
     code,
-    // ✅ reference public asset directly
-    bgImage: "/bgImage.svg",
+    // ✅ reference public asset directly with lowercase filename
+    bgImage: "/bgimage.svg",
     profile_martin
 }
 
@@ -68,7 +68,7 @@ export const userDummyData = [
     },
     {
         "_id": "680f5137f10f3cd28382ed10",
-        "email": "test4@greatstack.dev",
+        "email": "Marco Jones",
         "fullName": "Marco Jones",
         "profilePic": profile_marco,
         "bio": "Hi Everyone, I am Using QuickChat",
@@ -140,3 +140,4 @@ export const messagesDummyData = [
         "createdAt": "2025-04-28T10:24:08.523Z",
     }
 ]
+

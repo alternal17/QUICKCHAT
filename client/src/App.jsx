@@ -13,7 +13,7 @@ const App = () => {
     <div
       className="min-h-screen bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: 'url("/bgimage.svg")', // ✅ lowercase to match file name
+        backgroundImage: 'url("/bgImage.svg")', 
         backgroundSize: "cover",                 // ensures full-screen coverage
         backgroundRepeat: "no-repeat",           // prevents tiling
         backgroundPosition: "center",            // centers the image

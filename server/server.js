@@ -15,7 +15,7 @@ const httpServer = http.createServer(app);
 // ✅ Allowed origins (local + production frontend)
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://quickchatapp-rho.vercel.app"
+  "https://karanjachatapp-rho.vercel.app"
 ];
 
 // ✅ Configure Socket.io CORS
